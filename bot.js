@@ -60,7 +60,7 @@ msg.delete();
 });
 
   client.on('message', message => {
-    if (message.content.startsWith("*Link")) {
+    if (message.content.startsWith("*link")) {
 
   message.channel.createInvite({
         thing: true,
@@ -261,6 +261,8 @@ message.author.send(`
 ❧ *date الوقت
 ❧ *rome معلومات الروم
 ❧ *hacked ➺ لعبة التهكير
+❧ *hide ﻹخفاء الرومات  
+❧ *unhide ﻹظهار الرومات
 ❧ *bans ➺ معرفة عدد الاشخاص المبندين من السيرفر
 ❧ *cv ➺ انشاء روم صوتي
 ❧ *ct ➺ انشاء روم كتابي
@@ -851,7 +853,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Abdou ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`*help | HK System`,"http://twitch.tv/abdoufersaoui_dz")
+client.user.setGame(`*help | ҝгҝ System`,"http://twitch.tv/abdoufersaoui_dz")
 client.user.setStatus("dnd")
 });
 
@@ -1218,7 +1220,7 @@ client.on('message', message => {
 
 
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","≽──≼HK≽──≼"));
+    member.addRole(member.guild.roles.find("name","✽| ҝгҝ Member |✽"));
     });
 
 
@@ -1228,10 +1230,10 @@ client.on('guildMemberAdd', member => {
     var embed = new Discord.RichEmbed()
     .setThumbnail(member.user.avatarURL)
   .addField("***شكرا الانضمامك الينا***" ,member.user.username )
-    .setDescription('***بكل حب واحترام وشوق نستقبلك ونتمنى لك قضآء أجمل اللحظات ولآوقات معنا***')
+    .setDescription('**بكل حب واحترام وشوق نستقبلك ونتمنى لك قضآء أجمل اللحظات ولآوقات معنا**')
     .setColor('RANDOM')
-    .setImage('https://cdn.discordapp.com/attachments/521419225651347464/521796154044710923/---3.gif')
-var channel = member.guild.channels.find('name', '✗𝐖𝐞𝐥𝐜𝐨𝐦𝐞')
+    .setImage('https://cdn.discordapp.com/attachments/520283897058033671/526464555476320276/telechargement.jpeg')
+var channel = member.guild.channels.find('name', '『ωєℓcσмє』')
 if (!channel) return;
 channel.send({embed : embed});
 });
